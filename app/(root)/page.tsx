@@ -5,7 +5,7 @@ import {
     MARKET_OVERVIEW_WIDGET_CONFIG,
     TOP_STORIES_WIDGET_CONFIG
 } from "@/lib/constants";
-import {sendDailyNewsSummary} from "@/lib/inngest/functions";
+// import {sendDailyNewsSummary} from "@/lib/inngest/functions";
 
 const Home = () => {
     const scriptUrl = `https://s3.tradingview.com/external-embedding/embed-widget-`;
@@ -24,7 +24,7 @@ const Home = () => {
               </div>
               <div className="md-col-span xl:col-span-2">
                   <TradingViewWidget
-                      title="Stock Heatmap"
+                      title="Stock Heatmap" 
                       scriptUrl={`${scriptUrl}stock-heatmap.js`}
                       config={HEATMAP_WIDGET_CONFIG}
                       height={600}
